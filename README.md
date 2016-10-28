@@ -57,6 +57,7 @@ class Foo
     const DATE_APPROVED = '2012-06-01';
 }
 ```
+
 #####2.3 类中属性以及方法
 - 类中属性以及方法统一使用小写字母开头的驼峰式命名
 ```php
@@ -70,6 +71,7 @@ class Foo
 	}
 }
 ```
+
 ###二、PSR-2--编码风格规范
 ####1. 概览
 - 代码 **必须** 遵循 [PSR-1](https://laravel-china.org/topics/2078) 中的编码规范 。
@@ -84,6 +86,7 @@ class Foo
 - 控制结构的开始左括号后和结束右括号前，都 **一定不可** 有空格符；
 - 每个函数长度 **应该** 控制在40行以内，过长的函数务必考虑拆分；
 - **一定不可** 使用 `var` 定义变量。
+
 ####2. 解释
 #####2.1 例子
 以下是完全符合要求的示例代码：
@@ -114,6 +117,7 @@ class Foo extends Bar implements FooInterface
     }
 }
 ```
+
 #####2.2 文件
 - 所有PHP文件 **必须** 使用 `Unix LF (linefeed)` 作为行的结束符。
 - 所有PHP文件 **必须** 以一个空白行作为结束。
@@ -134,6 +138,7 @@ class Foo extends Bar implements FooInterface
 #####2.5 关键字 以及 True/False/Null
 PHP所有 [关键字](http://php.net/manual/en/reserved.keywords.php) **必须** 全部小写。
 常量 `true` 、`false` 和 `null` 也 必须 全部小写。
+
 #####2.6 方法以及参数
 - 所有方法都 **必须** 添加访问修饰符。
 - 方法名称后 **一定不可** 有空格符，其开始花括号 **必须** 独占一行，结束花括号也 **必须** 在方法主体后单独成一行。参数左括号后和右括号前 **一定不可** 有空格。
@@ -240,6 +245,7 @@ switch ($expr) {
         break;
 }
 ```
+
 #####3.3. while 和 do while
 一个规范的 while 语句应该如下所示，注意其「括号」、「空格」以及「花括号」的位置。
 ```php
