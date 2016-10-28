@@ -26,6 +26,7 @@
 - 抛出错误或异常
 - 修改全局或静态变量
 - 读或写文件等
+
 ```php
 <?php
 // 「副作用」：修改 ini 配置
@@ -47,6 +48,7 @@ function foo()
 
 ####2.2 类中常量
 - 必须全部大写，单词之间使用下划线分隔
+
 ```php
 <?php
 namespace Vendor\Model;
@@ -60,6 +62,7 @@ class Foo
 
 ####2.3 类中属性以及方法
 - 类中属性以及方法统一使用小写字母开头的驼峰式命名
+
 ```php
 <?php
 class Foo
@@ -90,6 +93,7 @@ class Foo
 ###2. 解释
 ####2.1 例子
 以下是完全符合要求的示例代码：
+
 ```php
 <?php
 namespace Vendor\Package;
@@ -226,6 +230,7 @@ if ($expr1) {
 标准的 `switch` 结构如下代码所示，留意括号、空格以及花括号的位置。 `case` 语句 **必须** 相对 `switch` 进行一次缩进，而 `break` 语句以及 `case` 内的其它语句都 **必须** 相对 `case` 进行一次缩进。
 
 如果存在非空的 `case` 直穿语句，主体里 必须 有类似 `// no break` 的注释。
+
 ```php
 <?php
 switch ($expr) {
@@ -248,6 +253,7 @@ switch ($expr) {
 
 ####3.3. while 和 do while
 一个规范的 while 语句应该如下所示，注意其「括号」、「空格」以及「花括号」的位置。
+
 ```php
 <?php
 while ($expr) {
@@ -255,6 +261,7 @@ while ($expr) {
 }
 ```
 标准的 `do while` 语句如下所示，同样的，注意其「括号」、「空格」以及「花括号」的位置。
+
 ```php
 <?php
 do {
@@ -264,6 +271,7 @@ do {
 
 ####3.4 for
 标准的 `for` 语句如下所示，注意其「括号」、「空格」以及「花括号」的位置。
+
 ```php
 <?php
 for ($i = 0; $i < 10; $i++) {
@@ -273,6 +281,7 @@ for ($i = 0; $i < 10; $i++) {
 
 ####3.5 foreach
 标准的 `foreach` 语句如下所示，注意其「括号」、「空格」以及「花括号」的位置。
+
 ```php
 <?php
 foreach ($iterable as $key => $value) {
@@ -282,6 +291,7 @@ foreach ($iterable as $key => $value) {
 
 ####3.6 try, catch
 标准的 `try catch` 语句如下所示，注意其「括号」、「空格」以及「花括号」的位置。
+
 ```php
 <?php
 try {
@@ -308,6 +318,7 @@ try {
 ###1.实例
 
 ####1.1 编码语义化 以及 函数单一职责
+
 ```php
 <?php
 namespace App\Logic\My;
@@ -336,6 +347,7 @@ $myOrderLogic->getOrderDetail($orderId);
 
 ####1.2 变量使用
 反例：
+
 ```php
 <?php
 $list = getAppleList();
